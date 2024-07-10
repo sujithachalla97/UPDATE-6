@@ -566,6 +566,7 @@ section {
     padding: 20px;
     position: relative;
     z-index: 2;
+    min-height: 50vh;
 }
 
 .content-about {
@@ -814,7 +815,7 @@ section {
     justify-content: center;
     align-items: center;
 
-    min-height: 70vh;
+    min-height: 50vh;
     overflow: hidden;
 
     width: 100%;
@@ -824,6 +825,7 @@ section {
 
 .content-activity {
     display: flex;
+    min-height: 40vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1164,6 +1166,7 @@ section {
 
     .content-activity p {
         font-size: 1rem;
+
     }
 
     .activity {
@@ -1301,7 +1304,7 @@ section {
 
 .contain {
     width: 100%;
-    min-height: 20vh;
+    min-height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1437,10 +1440,10 @@ section {
         height: 220px;
     }
 
-    .home-container{
+    .home-container {
         margin-left: -160px;
         margin-right: 15px;
-         width: 142%;
+        width: 142%;
     }
 
     .profile-card:hover {
@@ -1467,9 +1470,9 @@ section {
         height: 200px;
     }
 
-   .home-container{
+    .home-container {
         margin-left: 20px;
-         width: 96%;
+        width: 96%;
     }
 
     .profile-card:hover {
@@ -1495,11 +1498,12 @@ section {
         width: 180px;
         height: 180px;
     }
-.home-container{
+
+    .home-container {
         margin-left: 15px;
         width: 96%;
     }
-    
+
     .profile-card:hover {
         height: 220px;
     }
@@ -1523,10 +1527,11 @@ section {
         width: 140px;
         height: 140px;
     }
-   .home-container{
+
+    .home-container {
         margin-left: 20px;
         margin-right: 20px;
-         width: 92%;
+        width: 92%;
     }
 
     .profile-card:hover {
@@ -1550,11 +1555,11 @@ section {
     .contain {
         padding: 10px;
     }
-     
+
 
     .contain1 {
-        
-        
+
+
         width: 100%;
         height: 10vh;
         padding: 3vh;
@@ -1568,8 +1573,8 @@ section {
     }
 
     .contain2 {
-       
-      
+
+
         width: 100%;
         height: 5vh;
         padding-left: 3vh;
@@ -1618,7 +1623,7 @@ section {
 
 .contact-us {
     margin-top: -20px;
-    min-height: 50vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -1730,6 +1735,20 @@ section {
 
 }
 
+@media (min-width: 1200px) {
+    .contact-inputs {
+        width: 60vw;
+    }
+
+    .contact-us {
+        width: 95%;
+        margin-left: 40px;
+    }
+
+
+
+}
+
 @media (max-width: 992px) {
     .contact-inputs {
         width: 70vw;
@@ -1757,6 +1776,7 @@ section {
 
 
 }
+
 @media (max-width: 576px) {
     .contact-inputs {
         width: 70vw;
@@ -1770,6 +1790,10 @@ section {
 
 
 }
+
+
+
+
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/

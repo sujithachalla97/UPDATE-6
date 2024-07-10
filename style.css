@@ -1616,43 +1616,62 @@ section {
 }
 
 
-.contact-container {
-    height: 100vh;
+.contact-us {
+    margin-top: -20px;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.28) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    width: min(300px, 90%);
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+        0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+    margin: 30px;
+
     /* Add any other styles you need for the contact container */
-  }
-  .image1{
+}
+
+.image1 {
     height: 500px;
     width: 400px;
-  }
-  .contact-left {
+}
+
+.contact-left {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Changed "start" to "flex-start" for proper alignment */
+    align-items: flex-start;
+    /* Changed "start" to "flex-start" for proper alignment */
     gap: 20px;
-  }
-  
-  .contact-left-title h2 {
+}
+
+.contact-left-title h2 {
     font-weight: 600;
-    color: #a363aa;
+    color: #f5dc4e;
     font-size: 40px;
-    margin-bottom: 5px; /* Removed the extra "05px" */
-  }
-  
-  /* Additional styling can go here */
-  
-  .contact-left-title hr {
+    margin-bottom: 5px;
+    /* Removed the extra "05px" */
+}
+
+/* Additional styling can go here */
+
+.contact-left-title hr {
     border: none;
     width: 120px;
     height: 5px;
-    background-color: #a363aa;
+    background-color: #f5dc4e;
     border-radius: 10px;
-    margin-bottom: 20px; /* Removed the extra "20px" */
-  }
-  .contact-inputs {
-    width: 400px;
+    margin-bottom: 20px;
+    /* Removed the extra "20px" */
+}
+
+.contact-inputs {
+    width: 500px;
     height: 50px;
     border: none;
     outline: none;
@@ -1660,25 +1679,29 @@ section {
     font-weight: 500;
     color: #666;
     border-radius: 50px;
-  }
-  
-  .contact-left textarea {
+}
+
+.contact-left textarea {
     height: 140px;
-   
-    padding: 15px; /* Adjust padding as needed */
-  
-  
-    border-radius: 20px; /* Adjust border-radius as needed */
-  }
-  
-  /* Additional styling can go here */
-  .contact-inputs:focus{
-    border:2px solid #ff994f;
-  }
-  .contact-inputs::placeholder{
+
+    padding: 15px;
+    /* Adjust padding as needed */
+
+
+    border-radius: 20px;
+    /* Adjust border-radius as needed */
+}
+
+/* Additional styling can go here */
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
     color: #a9a9a9;
-  }
-  .contact-left button {
+}
+
+.contact-left button {
     display: flex;
     align-items: center;
     padding: 15px 30px;
@@ -1689,76 +1712,64 @@ section {
     border-radius: 50px;
     background: linear-gradient(270deg, #ff994f, #fa6d86);
     cursor: pointer;
-  }
-  
-  /* Additional styling can go here */
-  .contact-right img{
-    width: 500px;
-    height: 600px;
-  }
-  @media (max-width: 800px) {
-    .contact-inputs {
-        width: 80vw;
-    }
-  
-    .contact-right {
-        display: none;
-    }
-  }
-  .contact-right {
-    background-color: #f9f9f9;
-    padding: 20px;
-    height: 300px;
-    width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-right h4 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #a363aa;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-  
-  .mt-5 .d-flex {
-    margin-bottom: 15px;
-  }
-  
-  .d-flex i {
-    font-size: 20px;
-    color: #a363aa;
-    margin-right: 10px;
-  }
-  
-  .d-flex p {
-    font-size: 16px;
-    color: #666;
-    margin: 0;
-  }
-  
-  /* For better responsiveness */
-  @media (max-width: 800px) {
-    .contact-right {
-        padding: 15px;
-    }
-  
-    .contact-right h4 {
-        font-size: 20px;
-    }
-  
-    .d-flex i {
-        font-size: 18px;
-    }
-  
-    .d-flex p {
-        font-size: 14px;
-    }
-  }
-  
+}
 
+/* Additional styling can go here */
+
+@media (max-width: 1200px) {
+    .contact-inputs {
+        width: 60vw;
+    }
+
+    .contact-us {
+        width: 93%;
+        margin-left: 40px;
+    }
+
+
+
+}
+
+@media (max-width: 992px) {
+    .contact-inputs {
+        width: 70vw;
+    }
+
+    .contact-us {
+        width: 92%;
+        margin-left: 40px;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .contact-inputs {
+        width: 70vw;
+    }
+
+    .contact-us {
+        width: 90%;
+        margin-left: 40px;
+    }
+
+
+
+}
+@media (max-width: 576px) {
+    .contact-inputs {
+        width: 70vw;
+    }
+
+    .contact-us {
+        width: 85%;
+        margin-left: 40px;
+    }
+
+
+
+}
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
